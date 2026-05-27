@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Digite uma temperatura em Celsiu:"
+read C
+
+F = $(echo "scale=2; (9 * $C / 5) + 32" | bc)
+
+echo "Sua temperatura em Fahrenheit é: $F"
+
